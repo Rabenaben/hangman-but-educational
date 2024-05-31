@@ -5,7 +5,7 @@ const engWordList = [
     { word: "teacher", hint: "Someone who teaches.", difficulty: 1 },
     { word: "student", hint: "Someone who learns.", difficulty: 1 },
     { word: "pencil", hint: "A tool for writing or drawing.", difficulty: 1 },
-    { word: "science", hint: "Studying about .", difficulty: 1 },
+    { word: "science", hint: "Studying about things work.", difficulty: 1 },
     { word: "math", hint: "Working with numbers and shapes.", difficulty: 1 },
     { word: "history", hint: "Learning about the past.", difficulty: 1 },
     { word: "music", hint: "What people play in a nice sound way.", difficulty: 1 },
