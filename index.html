@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hangman but educational</title>
+    <link rel="icon" type="image/x-icon" href="images/hangman_logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-modal">
+        <div class="content">
+            <img decoding="async" src="#" alt="gif">
+            <h4>Game Over!</h4>
+            <p>The correct word was: <b>rainbow</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <a href="menu.html" class="back-button">&lt; Back to Main Menu</a>
+        <div class="score-display">Score: <span>0</span></div>
+        <div class="hangman-box">
+            <img decoding="async" src="#" alt="hangman-img">
+        </div>
+        <div class="game-box">
+            <ul class="word-display"></ul>
+            <h4 class="hint-text">Hint: <b></b></h4>
+            <h4 class="guesses-text">Incorrect guesses: <b></b></h4>
+            <div class="timer-text">Time left: <span class="timer"></span> seconds</div>
+            <div class="keyboard"></div>
+            <button class="hint-btn">Get a Letter</button>
+            <button class="adaptive-hint-btn">Get Synonym/Antonym</button>
+        </div>
+    </div>
+
+    <script src="word-list.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const topic = params.get('topic');
+
+        let wordList;
+        if (topic === "english") {
+            wordList = engWordList;
+        } else if (topic === "math") {
+            wordList = mathWordList;
+        } else if (topic === "science") {
+            wordList = scienceWordList;
+        } else {
+            wordList = engWordList;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

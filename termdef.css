@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(images/bg.png);
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    gap: 30px;
+    padding: 75px 40px;
+    background: #e9dfdf;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    position: relative; /* Ensure the back-button is positioned relative to this container */
+}
+
+.back-button {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.back-button:hover {
+    color: #000dff;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center; /* Center align the text */
+}
+
+.term-list {
+    margin-top: 30px;
+}
+
+.term-list h2 {
+    margin-bottom: 15px; /* Added margin */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #eee;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+    
+    .back-button {
+        top: 15px;
+        left: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 30px 10px;
+    }
+
+    .back-button {
+        top: 10px;
+        left: 10px;
+    }
+}

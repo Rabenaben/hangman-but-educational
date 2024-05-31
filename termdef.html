@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hangman but educational</title>
+    <link rel="icon" type="image/x-icon" href="images/hangman_logo.png">
+    <link rel="stylesheet" href="termdef.css">
+</head>
+<body>
+    <div class="container">
+        <a href="menu.html" class="back-button">&lt; Back to Main Menu</a>
+        <h1>Hangman Educational Terms</h1>
+        <input type="text" id="searchInput" placeholder="Search terms...">
+        <ul id="suggestions" class="suggestions-list"></ul>
+        
+        <div id="termListsContainer">
+            <div id="englishTerms" class="term-list">
+                <h2>English Terms</h2>
+                <ul id="englishList"></ul>
+            </div>
+
+            <div id="mathTerms" class="term-list">
+                <h2>Math Terms</h2>
+                <ul id="mathList"></ul>
+            </div>
+
+            <div id="scienceTerms" class="term-list">
+                <h2>Science Terms</h2>
+                <ul id="scienceList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="word-list.js"></script>
+    <script src="termdef.js"></script>
+</body>
+</html>
