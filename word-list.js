@@ -5,7 +5,7 @@ const engWordList = [
     { word: "teacher", hint: "Someone who teaches.", difficulty: 1 },
     { word: "student", hint: "Someone who learns.", difficulty: 1 },
     { word: "pencil", hint: "A tool for writing or drawing.", difficulty: 1 },
-    { word: "science", hint: "Studying about things work.", difficulty: 1 },
+    { word: "science", hint: "Studying about how things work.", difficulty: 1 },
     { word: "math", hint: "Working with numbers and shapes.", difficulty: 1 },
     { word: "history", hint: "Learning about the past.", difficulty: 1 },
     { word: "music", hint: "What people play in a nice sound way.", difficulty: 1 },
@@ -72,14 +72,10 @@ const mathWordList = [
     { word: "parallel", hint: "Lines that never meet.", difficulty: 2 },
     { word: "congruent", hint: "Same size and shape.", difficulty: 2 },
     { word: "similar", hint: "Same shape but different size.", difficulty: 2 },
-    { word: "matrix", hint: "Grid of numbers or symbols.", difficulty: 2 },
-    { word: "calculus", hint: "Studying change and motion.", difficulty: 2 },
 
     { word: "mode", hint: "Most common number.", difficulty: 3 },
     { word: "median", hint: "Middle number when numbers are in order.", difficulty: 3 },
     { word: "prime", hint: "Number divisible only by 1 and itself.", difficulty: 3 },
-    { word: "algebra", hint: "Using letters to represent numbers.", difficulty: 3 },
-    { word: "trigonometry", hint: "Triangle and angle math.", difficulty: 3 },
     { word: "probability", hint: "Chance of something happening.", difficulty: 3 },
     { word: "statistics", hint: "Collecting and analyzing data.", difficulty: 3 },
     { word: "exponent", hint: "Number showing repeated multiplication.", difficulty: 3 },
@@ -88,8 +84,6 @@ const mathWordList = [
     { word: "integral", hint: "Finding area under a curve.", difficulty: 3 },
     { word: "limit", hint: "Approaching a value.", difficulty: 3 },
     { word: "sequence", hint: "Ordered list of numbers.", difficulty: 3 },
-    { word: "intercept", hint: "Where a line crosses an axis.", difficulty: 3 },
-    { word: "vector", hint: "Arrow representing direction and magnitude.", difficulty: 3 },
 ];
 
 const scienceWordList = [
@@ -121,15 +115,12 @@ const scienceWordList = [
     { word: "condensation", hint: "Gas to liquid process.", difficulty: 2 },
     { word: "circulation", hint: "Movement of blood in the body.", difficulty: 2 },
     { word: "respiration", hint: "Breathing process.", difficulty: 2 },
-    { word: "diffusion", hint: "Movement of particles from high to low concentration.", difficulty: 2 },
-    { word: "genetics", hint: "Study of heredity and genes.", difficulty: 2 },
     { word: "evolution", hint: "How species change over time.", difficulty: 2 },
     { word: "gravity", hint: "Force pulling objects toward Earth.", difficulty: 2 },
     { word: "friction", hint: "Force that opposes motion.", difficulty: 2 },
     { word: "magnetism", hint: "Force of attraction or repulsion by magnets.", difficulty: 2 },
     { word: "electricity", hint: "Flow of electric charge.", difficulty: 2 },
 
-    { word: "homeostasis", hint: "Maintaining internal balance in an organism.", difficulty: 3 },
     { word: "photosynthesis", hint: "Process plants use to make food from sunlight.", difficulty: 3 },
     { word: "metamorphosis", hint: "Transformation from larva to adult in insects.", difficulty: 3 },
     { word: "chromosome", hint: "Structure containing genetic information.", difficulty: 3 },
