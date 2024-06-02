@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 * {
     margin: 0;
@@ -53,6 +53,7 @@ body {
 .hangman-box img {
     user-select: none;
     max-width: 270px;
+    margin-top: 50px; /* Default margin for larger screens */
 }
 
 .hangman-box h1 {
@@ -214,6 +215,7 @@ body {
     padding: 12px 23px;
 }
 
+/* Responsive Design for Smaller Screens */
 @media (max-width: 782px) {
     .container {
         flex-direction: column;
@@ -223,6 +225,7 @@ body {
 
     .hangman-box img {
         max-width: 200px;
+        margin-top: 30px; /* Adjusted margin for medium screens */
     }
 
     .hangman-box h1 {
@@ -272,6 +275,11 @@ body {
 }
 
 @media (max-width: 480px) {
+    .hangman-box img {
+        max-width: 150px;
+        margin-top: 20px; /* Adjusted margin for smaller screens */
+    }
+
     .back-button {
         font-size: 1rem;
         top: 8px;
