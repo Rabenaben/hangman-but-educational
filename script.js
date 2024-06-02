@@ -63,8 +63,15 @@ const gameOver = (isVictory) => {
         checkForDifficultyIncrease();
     } else {
         score = 0;
+        resetUsedWords();
     }
     updateScoreDisplay();
+}
+
+const resetUsedWords = () => {
+    for (let key in usedWords) {
+        usedWords[key] = [];
+    }
 }
 
 const initGame = (button, clickedLetter) => {
