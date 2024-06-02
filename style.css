@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 * {
     margin: 0;
@@ -52,7 +52,8 @@ body {
 
 .hangman-box img {
     user-select: none;
-    max-width: 270px;
+    max-width: 100%;
+    height: auto;
 }
 
 .hangman-box h1 {
@@ -282,5 +283,39 @@ body {
         font-size: 1rem;
         top: 8px;
         right: 8px;
+    }
+
+    .hangman-box img {
+        max-width: 150px;
+    }
+
+    .game-box .keyboard button {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    .hint-btn, .adaptive-hint-btn {
+        padding: 8px 25px;
+        font-size: 0.9rem;
+    }
+
+    .game-modal .content {
+        padding: 20px;
+    }
+
+    .game-modal img {
+        max-width: 100px;
+    }
+
+    .game-modal h4 {
+        font-size: 1.3rem;
+    }
+
+    .game-modal p {
+        font-size: 1rem;
+    }
+
+    .game-modal button {
+        padding: 8px 15px;
     }
 }
