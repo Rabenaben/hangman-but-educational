@@ -140,7 +140,7 @@ const getRandomWord = () => {
 }
 
 const checkForDifficultyIncrease = () => {
-    if (correctWordsCount % wordsForDifficultyIncrease === 0) {
+    if (difficulty < 3 && correctWordsCount % wordsForDifficultyIncrease === 0) {
         const increaseDifficulty = confirm("You've answered 5 questions correctly. Would you like to increase the difficulty?");
         if (increaseDifficulty) {
             difficulty++;
